@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AC03F07A17463940421E5AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0AC03F07A17463940421E5AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		339B301ED8B2A1BF9915FBAD /* Pods_XCSkeleton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCSkeleton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D205B6F0BE7343817146340 /* Pods-XCSkeleton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCSkeleton_Example.debug.xcconfig"; path = "Target Support Files/Pods-XCSkeleton_Example/Pods-XCSkeleton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		50184BA94EE84D4B4772B2B8 /* XCSkeleton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XCSkeleton.podspec; path = ../XCSkeleton.podspec; sourceTree = "<group>"; };
+		50184BA94EE84D4B4772B2B8 /* XCSkeleton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XCSkeleton.podspec; path = ../XCSkeleton.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XCSkeleton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCSkeleton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7CF980C0217F9E31F7FB1D0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7CF980C0217F9E31F7FB1D0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D0525186136824DB77F154 /* Pods_XCSkeleton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCSkeleton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37E56E482421715BF94726B /* Pods-XCSkeleton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCSkeleton_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XCSkeleton_Tests/Pods-XCSkeleton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				A37E56E482421715BF94726B /* Pods-XCSkeleton_Tests.debug.xcconfig */,
 				F1A45FC270A6D68FA403119A /* Pods-XCSkeleton_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -1,0 +1,16 @@
+PODS:
+  - XCSkeleton (0.1.0)
+
+DEPENDENCIES:
+  - XCSkeleton (from `../`)
+
+EXTERNAL SOURCES:
+  XCSkeleton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XCSkeleton: 14ad359ae7d71e3f2abd365281995e1b1b0666ea
+
+PODFILE CHECKSUM: de1263575ef05a722383b81568b7a0bfbf9b9231
+
+COCOAPODS: 1.6.1

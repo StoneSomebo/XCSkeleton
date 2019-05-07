@@ -1,0 +1,6 @@
+framework module Pods_XCSkeleton_Example {
+  umbrella header "Pods-XCSkeleton_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

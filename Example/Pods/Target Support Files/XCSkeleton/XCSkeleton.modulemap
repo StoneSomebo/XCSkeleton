@@ -1,0 +1,6 @@
+framework module XCSkeleton {
+  umbrella header "XCSkeleton-umbrella.h"
+
+  export *
+  module * { export * }
+}
