@@ -94,9 +94,9 @@
         _avatarView.frame = CGRectMake(kSkeletonLeftMargin, kSkeletonTopMargin, kSkeletonAvatarWidth, kSkeletonAvatarWidth);
         _avatarView.layer.cornerRadius = _avatarView.frame.size.height / 2;
         _avatarView.layer.masksToBounds = YES;
-        _firstLine.frame = CGRectMake(_avatarView.frame.origin.x + 10, kSkeletonTopMargin, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
-        _secondLine.frame = CGRectMake(_avatarView.frame.origin.x + 10, (_firstLine.frame.origin.y + _firstLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
-        _thirdLine.frame = CGRectMake(_avatarView.frame.origin.x + 10, (_secondLine.frame.origin.y + _secondLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
+        _firstLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, kSkeletonTopMargin, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
+        _secondLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, (_firstLine.frame.origin.y + _firstLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
+        _thirdLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, (_secondLine.frame.origin.y + _secondLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
     }
 }
 
