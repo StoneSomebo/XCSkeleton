@@ -26,7 +26,7 @@
 
 -(instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        _type = ZYSkeletonViewLists;
+        _type = ZYSkeletonPostDetail;
         [self configData];
         [self setupSubviews];
     }
@@ -46,16 +46,69 @@
     
     NSMutableArray *muDataSource = [NSMutableArray array];
     CGFloat height = 0;
-    if (self.type == ZYSkeletonViewHeadAndLists) {
-        ZYSkeletonModel *model = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonHeadView];
+    if (self.type == ZYSkeletonPostDetail || self.type == ZYSkeletonTopicDetailShowCommentFirst) {
+        
+        if (self.type == ZYSkeletonPostDetail) {
+            ZYSkeletonModel *headTopModel = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonPostDetailHeadTop];
+            [muDataSource addObject:headTopModel];
+            
+            Class headCellClass = [headTopModel cellClass];
+            if ([headCellClass respondsToSelector:@selector(cellHeight)]) {
+                height += [headCellClass cellHeight];
+            }
+            
+            ZYSkeletonModel *headMiddleModel = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonPostDetailHeadMiddle];
+            [muDataSource addObject:headMiddleModel];
+            
+            Class middleCellClass = [headMiddleModel cellClass];
+            if ([middleCellClass respondsToSelector:@selector(cellHeight)]) {
+                height += [middleCellClass cellHeight];
+            }
+        }
+        
+        ZYSkeletonModel *headBottomModel = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonPostDetailHeadBottom];
+        [muDataSource addObject:headBottomModel];
+        
+        Class bottomCellClass = [headBottomModel cellClass];
+        if ([bottomCellClass respondsToSelector:@selector(cellHeight)]) {
+            height += [bottomCellClass cellHeight];
+        }
+        
+        NSInteger count = 0;  // 防止死循环
+        while (height < kScreenHeight && count < 20) {
+            count ++;
+            ZYSkeletonModel *model = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonPostDetailNormalCell];
+            [muDataSource addObject:model];
+            
+            Class cellClass = [model cellClass];
+            if ([cellClass respondsToSelector:@selector(cellHeight)]) {
+                height += [cellClass cellHeight];
+            }
+        }
+    
+    } else if (self.type == ZYSkeletonTopicDetail) {
+        
+        ZYSkeletonModel *model = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonTopicDetailHead];
         [muDataSource addObject:model];
-        height += [ZYSkeletonBaseCell cellHeightWithModel:model];
+        
+        Class cellClass = [model cellClass];
+        if ([cellClass respondsToSelector:@selector(cellHeight)]) {
+            height += [cellClass cellHeight];
+        }
+        
+        NSInteger count = 0;  // 防止死循环
+        while (height < kScreenHeight && count < 20) {
+            count ++;
+            ZYSkeletonModel *model = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonTopicDetailNormalCell];
+            [muDataSource addObject:model];
+            
+            Class cellClass = [model cellClass];
+            if ([cellClass respondsToSelector:@selector(cellHeight)]) {
+                height += [cellClass cellHeight];
+            }
+        }
     }
-    while (height < kScreenHeight) {
-        ZYSkeletonModel *model = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonNormalCell];
-        [muDataSource addObject:model];
-        height += [ZYSkeletonBaseCell cellHeightWithModel:model];
-    }
+    
     self.dataSource = muDataSource.copy;
 }
 
@@ -64,15 +117,20 @@
     self.backgroundColor = [UIColor whiteColor];
 
     self.tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
-    [self.tableView registerClass:[ZYSkeletonBaseCell class] forCellReuseIdentifier:NSStringFromClass([ZYSkeletonBaseCell class])];
+    
+    NSMutableArray *cellClassNames = [NSMutableArray arrayWithCapacity:self.dataSource.count];
+    for (ZYSkeletonModel *model in self.dataSource) {
+        if (![cellClassNames containsObject:NSStringFromClass([model cellClass])]) {
+            [self.tableView registerClass:[model cellClass] forCellReuseIdentifier:NSStringFromClass([model cellClass])];
+        }
+    }
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.scrollEnabled = NO;
     [self addSubview:self.tableView];
-    
 }
-
 
 #pragma mark UITableViewDelegate,UITableViewDataSource
 
@@ -81,15 +139,22 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ZYSkeletonBaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ZYSkeletonBaseCell class]) forIndexPath:indexPath];
     ZYSkeletonModel *model = self.dataSource[indexPath.row];
-    [baseCell configViewWithModel:model];
+    Class cellClass = [model cellClass];
+    ZYSkeletonBaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(cellClass) forIndexPath:indexPath];
+    if ([baseCell respondsToSelector:@selector(configView)]) {
+        [baseCell configView];
+    }
     return baseCell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     ZYSkeletonModel *model = self.dataSource[indexPath.row];
-    return [ZYSkeletonBaseCell cellHeightWithModel:model];
+    Class cellClass = [model cellClass];
+    if ([cellClass respondsToSelector:@selector(cellHeight)]) {
+        return [cellClass cellHeight];
+    }
+    return 0;
 }
 
 

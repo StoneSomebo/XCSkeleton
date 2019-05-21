@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, ZYSkeletonViewType) {
-    ZYSkeletonViewLists,
-    ZYSkeletonViewHeadAndLists
+    ZYSkeletonPostDetail,
+    ZYSkeletonTopicDetailShowCommentFirst,
+    ZYSkeletonTopicDetail
 };
 
 NS_ASSUME_NONNULL_BEGIN

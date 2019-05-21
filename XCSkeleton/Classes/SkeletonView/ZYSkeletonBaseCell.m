@@ -13,16 +13,10 @@
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kSkeletonLeftMargin   15.0
 #define kSkeletonTopMargin    15.0
-#define kSkeletonAvatarWidth  34.0
+#define kSkeletonAvatarWidth  40.0
 #define kSkeletonBottomMargin 15.0
 
 @interface ZYSkeletonBaseCell ()
-
-@property (nonatomic, strong) FBShimmeringView *shimmeringView;
-@property (nonatomic, strong) UIView *avatarView;
-@property (nonatomic, strong) UIView *firstLine;
-@property (nonatomic, strong) UIView *secondLine;
-@property (nonatomic, strong) UIView *thirdLine;
 
 @end
 
@@ -34,70 +28,88 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupSubViews];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
     }
     return self;
 }
 
 - (void)setupSubViews {
     
-    _shimmeringView = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
-    _shimmeringView.shimmering = YES;
-    _shimmeringView.shimmeringBeginFadeDuration = 0.3;
-    _shimmeringView.shimmeringOpacity = 0.3;
-    _shimmeringView.shimmeringSpeed = 300;
-    [self addSubview:_shimmeringView];
-    
     _avatarView = [[UIView alloc] initWithFrame:CGRectZero];
-    _avatarView.backgroundColor = [UIColor whiteColor];
     [self addSubview:_avatarView];
+    _avatarShimmer = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
+    _avatarShimmer.shimmering = YES;
+    _avatarShimmer.shimmeringSpeed = 50;
+    [_avatarView addSubview:_avatarShimmer];
+    UIView *avatarContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    avatarContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:1];
+    _avatarShimmer.contentView = avatarContentView;
     
     _firstLine = [[UIView alloc] initWithFrame:CGRectZero];
-    _firstLine.backgroundColor = [UIColor whiteColor];
     [self addSubview:_firstLine];
+    _firstShimmer = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
+    _firstShimmer.shimmering = YES;
+    _firstShimmer.shimmeringSpeed = 300;
+    [_firstLine addSubview:_firstShimmer];
+    UIView *firstContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    firstContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _firstShimmer.contentView = firstContentView;
     
     _secondLine = [[UIView alloc] initWithFrame:CGRectZero];
-    _secondLine.backgroundColor = [UIColor whiteColor];
     [self addSubview:_secondLine];
+    _secondShimmer = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
+    _secondShimmer.shimmering = YES;
+    _secondShimmer.shimmeringSpeed = 300;
+    [_secondLine addSubview:_secondShimmer];
+    UIView *secondContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    secondContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _secondShimmer.contentView = secondContentView;
     
     _thirdLine = [[UIView alloc] initWithFrame:CGRectZero];
-    _thirdLine.backgroundColor = [UIColor whiteColor];
     [self addSubview:_thirdLine];
+    _thirdShimmer = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
+    _thirdShimmer.shimmering = YES;
+    _thirdShimmer.shimmeringSpeed = 300;
+    [_thirdLine addSubview:_thirdShimmer];
+    UIView *thirdContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    thirdContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _thirdShimmer.contentView = thirdContentView;
     
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    contentView.backgroundColor = [UIColor colorWithRed:204.0 / 255.0 green:204.0 / 255.0 blue:204.0 / 255.0 alpha:1];
-    _shimmeringView.contentView = contentView;
-    
+    _fourthLine = [[UIView alloc] initWithFrame:CGRectZero];
+    [self addSubview:_fourthLine];
+    _fourthShimmer = [[FBShimmeringView alloc] initWithFrame:CGRectZero];
+    _fourthShimmer.shimmering = YES;
+    _fourthShimmer.shimmeringSpeed = 300;
+    [_fourthLine addSubview:_fourthShimmer];
+    UIView *fourthContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    fourthContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _fourthShimmer.contentView = fourthContentView;
 }
 
 #pragma mark API
 
-+ (CGFloat)cellHeightWithModel:(ZYSkeletonModel *)model {
-    if (model.type == ZYSkeletonHeadView) {
-        return 160;
-    } else {
-        return 80;
-    }
++ (CGFloat)cellHeight {
+    return 0;
 }
 
-- (void)configViewWithModel:(ZYSkeletonModel *)model {
-    if (model.type == ZYSkeletonHeadView) {
-        
-        _shimmeringView.frame = CGRectMake(0, 0, kScreenWidth, [[self class] cellHeightWithModel:model]);
-        _avatarView.frame = CGRectMake(kSkeletonLeftMargin, kSkeletonTopMargin, kSkeletonAvatarWidth, kSkeletonAvatarWidth);
-        _avatarView.layer.cornerRadius = _avatarView.frame.size.height / 2;
-        _avatarView.layer.masksToBounds = YES;
-        _firstLine.frame = CGRectMake(_avatarView.frame.origin.x, (_avatarView.frame.origin.y + _avatarView.frame.size.height) + kSkeletonBottomMargin, kScreenWidth - 90 * kScreenWidth / 375, 15);
-        _secondLine.frame = CGRectMake(_avatarView.frame.origin.x, (_firstLine.frame.origin.y + _firstLine.frame.size.height) + kSkeletonBottomMargin, kScreenWidth - 90 * kScreenWidth / 375, 15);
-        _thirdLine.frame = CGRectMake(_avatarView.frame.origin.x, (_secondLine.frame.origin.y + _secondLine.frame.size.height) + kSkeletonBottomMargin, kScreenWidth - 90 * kScreenWidth / 375, 15);
-    } else {
-        _shimmeringView.frame = CGRectMake(0, 0, kScreenWidth, [[self class] cellHeightWithModel:model]);
-        _avatarView.frame = CGRectMake(kSkeletonLeftMargin, kSkeletonTopMargin, kSkeletonAvatarWidth, kSkeletonAvatarWidth);
-        _avatarView.layer.cornerRadius = _avatarView.frame.size.height / 2;
-        _avatarView.layer.masksToBounds = YES;
-        _firstLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, kSkeletonTopMargin, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
-        _secondLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, (_firstLine.frame.origin.y + _firstLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
-        _thirdLine.frame = CGRectMake(_avatarView.frame.origin.x + _avatarView.frame.size.width + 10, (_secondLine.frame.origin.y + _secondLine.frame.size.height) + 10, kScreenWidth - _avatarView.frame.origin.x - 90 * kScreenWidth / 375, 10);
-    }
+- (void)configView{
+    
+    _avatarView.layer.cornerRadius  = _avatarView.frame.size.height / 2;
+    _avatarView.layer.masksToBounds = YES;
+    _firstLine.layer.cornerRadius   = _firstLine.frame.size.height / 2;
+    _firstLine.layer.masksToBounds  = YES;
+    _secondLine.layer.cornerRadius  = _firstLine.frame.size.height / 2;
+    _secondLine.layer.masksToBounds = YES;
+    _thirdLine.layer.cornerRadius   = _firstLine.frame.size.height / 2;
+    _thirdLine.layer.masksToBounds  = YES;
+    _fourthLine.layer.cornerRadius  = _firstLine.frame.size.height / 2;
+    _fourthLine.layer.masksToBounds = YES;
+
+    _avatarShimmer.frame = _avatarView.bounds;
+    _firstShimmer.frame  = _firstLine.bounds;
+    _secondShimmer.frame = _secondLine.bounds;
+    _thirdShimmer.frame  = _thirdLine.bounds;
+    _fourthShimmer.frame = _fourthLine.bounds;
 }
 
 

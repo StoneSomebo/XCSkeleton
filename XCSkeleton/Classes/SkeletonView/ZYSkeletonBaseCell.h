@@ -8,13 +8,29 @@
 
 #import <UIKit/UIKit.h>
 @class ZYSkeletonModel;
+@class FBShimmeringView;
+
+#define kSkeletonScreenWidth  [[UIScreen mainScreen] bounds].size.width
+#define kSkeletonScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZYSkeletonBaseCell : UITableViewCell
 
-- (void)configViewWithModel:(ZYSkeletonModel *)model;
-+ (CGFloat)cellHeightWithModel:(ZYSkeletonModel *)model;
+@property (nonatomic, strong) UIView *avatarView;
+@property (nonatomic, strong) UIView *firstLine;
+@property (nonatomic, strong) UIView *secondLine;
+@property (nonatomic, strong) UIView *thirdLine;
+@property (nonatomic, strong) UIView *fourthLine;
+
+@property (nonatomic, strong) FBShimmeringView *avatarShimmer;
+@property (nonatomic, strong) FBShimmeringView *firstShimmer;
+@property (nonatomic, strong) FBShimmeringView *secondShimmer;
+@property (nonatomic, strong) FBShimmeringView *thirdShimmer;
+@property (nonatomic, strong) FBShimmeringView *fourthShimmer;
+
+- (void)configView;
++ (CGFloat)cellHeight;
 
 @end
 

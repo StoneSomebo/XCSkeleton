@@ -11,8 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, ZYSkeletonModelType) {
-    ZYSkeletonNormalCell,
-    ZYSkeletonHeadView
+    ZYSkeletonTopicDetailHead = 0,
+    ZYSkeletonTopicDetailNormalCell,
+    ZYSkeletonPostDetailHeadTop,
+    ZYSkeletonPostDetailHeadMiddle,
+    ZYSkeletonPostDetailHeadBottom,
+    ZYSkeletonPostDetailNormalCell
 };
 
 @interface ZYSkeletonModel : NSObject
@@ -20,7 +24,9 @@ typedef NS_ENUM(NSUInteger, ZYSkeletonModelType) {
 - (instancetype)initWithType:(ZYSkeletonModelType)type;
 
 @property (nonatomic, assign) ZYSkeletonModelType type;
+@property (nonatomic, assign) BOOL isNightVersion;      // 是否是夜间模式，默认是NO
 
+- (Class)cellClass;
 
 @end
 
