@@ -7,7 +7,6 @@
 //
 
 #import "ZYSkeletonBaseCell.h"
-#import "FBShimmeringView.h"
 #import "ZYSkeletonModel.h"
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -17,6 +16,13 @@
 #define kSkeletonBottomMargin 15.0
 
 @interface ZYSkeletonBaseCell ()
+
+@property (nonatomic, strong) UIView *avatarContentView;
+@property (nonatomic, strong) UIView *firstContentView;
+@property (nonatomic, strong) UIView *secondContentView;
+@property (nonatomic, strong) UIView *thirdContentView;
+@property (nonatomic, strong) UIView *fourthContentView;
+
 
 @end
 
@@ -41,9 +47,9 @@
     _avatarShimmer.shimmering = YES;
     _avatarShimmer.shimmeringSpeed = 50;
     [_avatarView addSubview:_avatarShimmer];
-    UIView *avatarContentView = [[UIView alloc] initWithFrame:CGRectZero];
-    avatarContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:1];
-    _avatarShimmer.contentView = avatarContentView;
+    _avatarContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    _avatarContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:1];
+    _avatarShimmer.contentView = _avatarContentView;
     
     _firstLine = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_firstLine];
@@ -51,9 +57,9 @@
     _firstShimmer.shimmering = YES;
     _firstShimmer.shimmeringSpeed = 300;
     [_firstLine addSubview:_firstShimmer];
-    UIView *firstContentView = [[UIView alloc] initWithFrame:CGRectZero];
-    firstContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
-    _firstShimmer.contentView = firstContentView;
+    _firstContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    _firstContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _firstShimmer.contentView = _firstContentView;
     
     _secondLine = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_secondLine];
@@ -61,9 +67,9 @@
     _secondShimmer.shimmering = YES;
     _secondShimmer.shimmeringSpeed = 300;
     [_secondLine addSubview:_secondShimmer];
-    UIView *secondContentView = [[UIView alloc] initWithFrame:CGRectZero];
-    secondContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
-    _secondShimmer.contentView = secondContentView;
+    _secondContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    _secondContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _secondShimmer.contentView = _secondContentView;
     
     _thirdLine = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_thirdLine];
@@ -71,9 +77,9 @@
     _thirdShimmer.shimmering = YES;
     _thirdShimmer.shimmeringSpeed = 300;
     [_thirdLine addSubview:_thirdShimmer];
-    UIView *thirdContentView = [[UIView alloc] initWithFrame:CGRectZero];
-    thirdContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
-    _thirdShimmer.contentView = thirdContentView;
+    _thirdContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    _thirdContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _thirdShimmer.contentView = _thirdContentView;
     
     _fourthLine = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:_fourthLine];
@@ -81,9 +87,9 @@
     _fourthShimmer.shimmering = YES;
     _fourthShimmer.shimmeringSpeed = 300;
     [_fourthLine addSubview:_fourthShimmer];
-    UIView *fourthContentView = [[UIView alloc] initWithFrame:CGRectZero];
-    fourthContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
-    _fourthShimmer.contentView = fourthContentView;
+    _fourthContentView = [[UIView alloc] initWithFrame:CGRectZero];
+    _fourthContentView.backgroundColor = [UIColor colorWithRed:231.0 / 255.0 green:231.0 / 255.0 blue:231.0 / 255.0 alpha:0.5];
+    _fourthShimmer.contentView = _fourthContentView;
 }
 
 #pragma mark API
@@ -92,7 +98,16 @@
     return 0;
 }
 
-- (void)configView{
+- (void)configViewWithNightVersion:(BOOL)isNightVersion{
+    
+    if (isNightVersion) {
+        self.backgroundColor = [UIColor colorWithRed:37.0 / 255.0 green:38.0 / 255.0 blue:52.0 / 255.0 alpha:1];
+        _avatarContentView.backgroundColor = [UIColor colorWithRed:48.0 / 255.0 green:50.0 / 255.0 blue:67.0 / 255.0 alpha:1];
+        _firstContentView.backgroundColor = [UIColor colorWithRed:48.0 / 255.0 green:50.0 / 255.0 blue:67.0 / 255.0 alpha:0.5];
+        _secondContentView.backgroundColor = [UIColor colorWithRed:48.0 / 255.0 green:50.0 / 255.0 blue:67.0 / 255.0 alpha:0.5];
+        _thirdContentView.backgroundColor = [UIColor colorWithRed:48.0 / 255.0 green:50.0 / 255.0 blue:67.0 / 255.0 alpha:0.5];
+        _fourthContentView.backgroundColor = [UIColor colorWithRed:48.0 / 255.0 green:50.0 / 255.0 blue:67.0 / 255.0 alpha:0.5];
+    }
     
     _avatarView.layer.cornerRadius  = _avatarView.frame.size.height / 2;
     _avatarView.layer.masksToBounds = YES;

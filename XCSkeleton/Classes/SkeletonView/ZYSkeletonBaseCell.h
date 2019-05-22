@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBShimmeringView.h"
 @class ZYSkeletonModel;
-@class FBShimmeringView;
 
 #define kSkeletonScreenWidth  [[UIScreen mainScreen] bounds].size.width
 #define kSkeletonScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) FBShimmeringView *thirdShimmer;
 @property (nonatomic, strong) FBShimmeringView *fourthShimmer;
 
-- (void)configView;
+- (void)configViewWithNightVersion:(BOOL)isNightVersion;
 + (CGFloat)cellHeight;
 
 @end

@@ -13,7 +13,7 @@
     return 99;
 }
 
-- (void)configView {
+- (void)configViewWithNightVersion:(BOOL)isNightVersion {
     
     self.avatarView.frame  = CGRectMake(13, 26, 34, 34);
     self.firstLine.frame   = CGRectMake(58, 28, kSkeletonScreenWidth - 163, 12);
@@ -21,7 +21,7 @@
     self.thirdLine.frame   = CGRectMake(58, 76, kSkeletonScreenWidth - 199, 12);
     self.fourthLine.hidden = YES;
     
-    [super configView];
+    [super configViewWithNightVersion:isNightVersion];
 }
 
 @end

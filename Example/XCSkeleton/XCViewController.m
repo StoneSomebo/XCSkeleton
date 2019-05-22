@@ -7,6 +7,7 @@
 //
 
 #import "XCViewController.h"
+#import "ZYSkeletonView.h"
 
 @interface XCViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+    ZYSkeletonView *skeletonView = [[ZYSkeletonView alloc] initWithFrame:self.view.bounds type:ZYSkeletonPostDetail isNightVersion:YES];
+    [self.view addSubview:skeletonView];
 }
 
 - (void)didReceiveMemoryWarning

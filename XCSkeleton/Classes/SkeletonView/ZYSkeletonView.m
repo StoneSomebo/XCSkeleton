@@ -17,6 +17,7 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *dataSource;
 @property (nonatomic,assign) ZYSkeletonViewType type;
+@property (nonatomic,assign) BOOL isNightVersion;
 
 @end
 
@@ -33,9 +34,10 @@
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame type:(ZYSkeletonViewType)type {
+-(instancetype)initWithFrame:(CGRect)frame type:(ZYSkeletonViewType)type isNightVersion:(BOOL)isNightVersion{
     if (self = [super initWithFrame:frame]) {
         _type = type;
+        _isNightVersion = isNightVersion;
         [self configData];
         [self setupSubviews];
     }
@@ -46,7 +48,7 @@
     
     NSMutableArray *muDataSource = [NSMutableArray array];
     CGFloat height = 0;
-    if (self.type == ZYSkeletonPostDetail || self.type == ZYSkeletonTopicDetailShowCommentFirst) {
+    if (self.type == ZYSkeletonPostDetail || self.type == ZYSkeletonPostDetailShowCommentFirst) {
         
         if (self.type == ZYSkeletonPostDetail) {
             ZYSkeletonModel *headTopModel = [[ZYSkeletonModel alloc] initWithType:ZYSkeletonPostDetailHeadTop];
@@ -142,8 +144,8 @@
     ZYSkeletonModel *model = self.dataSource[indexPath.row];
     Class cellClass = [model cellClass];
     ZYSkeletonBaseCell *baseCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(cellClass) forIndexPath:indexPath];
-    if ([baseCell respondsToSelector:@selector(configView)]) {
-        [baseCell configView];
+    if ([baseCell respondsToSelector:@selector(configViewWithNightVersion:)]) {
+        [baseCell configViewWithNightVersion:self.isNightVersion];
     }
     return baseCell;
 }

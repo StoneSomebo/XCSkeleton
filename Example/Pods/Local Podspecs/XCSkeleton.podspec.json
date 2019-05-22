@@ -1,9 +1,9 @@
 {
   "name": "XCSkeleton",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "A short description of XCSkeleton.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/1135447344@qq.com/XCSkeleton",
+  "homepage": "https://github.com/StoneSomebo/XCSkeleton",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "1135447344@qq.com": "zhoujibin2014@xiaochuankeji.cn"
   },
   "source": {
-    "git": "https://github.com/1135447344@qq.com/XCSkeleton.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/StoneSomebo/XCSkeleton.git",
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"

@@ -10,7 +10,7 @@
 
 typedef NS_ENUM(NSUInteger, ZYSkeletonViewType) {
     ZYSkeletonPostDetail,
-    ZYSkeletonTopicDetailShowCommentFirst,
+    ZYSkeletonPostDetailShowCommentFirst,
     ZYSkeletonTopicDetail
 };
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZYSkeletonView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame type:(ZYSkeletonViewType)type;
+- (instancetype)initWithFrame:(CGRect)frame type:(ZYSkeletonViewType)type isNightVersion:(BOOL)isNightVersion;
 
 @end
 

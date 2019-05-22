@@ -13,7 +13,7 @@
     return 126;
 }
 
-- (void)configView {
+- (void)configViewWithNightVersion:(BOOL)isNightVersion {
     
     self.firstLine.hidden  = YES;
     self.secondLine.hidden = YES;
@@ -21,7 +21,7 @@
     self.fourthLine.hidden = YES;
     self.avatarView.frame = CGRectMake(13, 26, kSkeletonScreenWidth - 26, 100);
     
-    [super configView];
+    [super configViewWithNightVersion:isNightVersion];
     
     self.avatarView.layer.cornerRadius = 12;
 }

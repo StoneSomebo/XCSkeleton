@@ -7,17 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039F80630700928C88BDC4BBD47E2582 /* ZYSkeletonPostDetailHeadMiddleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8418265964E5070D13DB155883E3568A /* ZYSkeletonPostDetailHeadMiddleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E63435930FE74F1BB473E5685B6407 /* FBShimmering.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C7F2F8890C2D35DC5F0A474F310A9C /* FBShimmering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09AF3306F374300C167AFAFB5B93A4BB /* Pods-XCSkeleton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0911313B3F91C1B72E12B3924BB713E /* Pods-XCSkeleton_Example-dummy.m */; };
+		2006253BA82C31F261E92D43ACA25F42 /* ZYSkeletonTopicDetailHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FB4DDC057CAB59D4E81C86F9B1E82 /* ZYSkeletonTopicDetailHeadCell.m */; };
 		26E25F5B7D164241D5F56BA750EC5A29 /* Pods-XCSkeleton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E93D5748D3609ECBA3433513D0C5E8 /* Pods-XCSkeleton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A667BBFBBF504D47C0B19C1A7234B19 /* ZYSkeletonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB6DD77DA420ED3FFDD566610818 /* ZYSkeletonView.m */; };
+		2D11278BED020CB78CFA14CBB7CB769A /* XCSkeleton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E19ADA09173EF06E642C5796BF628B92 /* XCSkeleton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		316ABB5D689E558DA8003EAC9A967501 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298ECA983A4E1E7233AD5ADBF61F55D8 /* FBShimmeringView.m */; };
+		342FE693514D931C86E593C2B8ABF39B /* ZYSkeletonPostDetailHeadTopCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B93A40D73F1402C2E0B13DB2AFCA42D /* ZYSkeletonPostDetailHeadTopCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D3F982644CBA6C7AB69DD2844195639 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7099808AC51F50A0DC959FC7590E2 /* FBShimmeringLayer.m */; };
+		49B4CE73DB4CC91D52987F70A9452299 /* FBShimmeringLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C4A0EEAB46520008179631FBB38CA18 /* FBShimmeringLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CA0750C4C62BA43704449BBB1D4A4F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		506E239CD2B637A90FFD19457A9AF26F /* ZYSkeletonBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D25DD15BD1575E7CABE4367F4A827D7 /* ZYSkeletonBaseCell.m */; };
+		557563611982DEC956D28B9857EFF6A3 /* ZYSkeletonPostDetailHeadBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42478B6C03F5662AD21CD6ACE311F246 /* ZYSkeletonPostDetailHeadBottomCell.m */; };
+		56E624CCCF94BF4D30CC5C12C7D26971 /* ZYSkeletonPostDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A5DE4AB0B50D9AF6578D8840E4C6F3 /* ZYSkeletonPostDetailCell.m */; };
+		5888A5367DB64E4EE01BB73DDF6E5C81 /* ZYSkeletonTopicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C374D7B53AD65C55A6B36E2F6BB3EE7D /* ZYSkeletonTopicDetailCell.m */; };
+		5FF01A706CA302B2EB623CFCBF667447 /* FBShimmeringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 61315C92316F73E1C58083CC628B6C47 /* FBShimmeringView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B383AB805B9B12FA3995C898DE48DE9 /* ZYSkeletonPostDetailHeadBottomCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F405F3A3715C1E5BB0202008FE9CAE8 /* ZYSkeletonPostDetailHeadBottomCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72DD110AB53AACFFB87A1C5778A93450 /* Pods-XCSkeleton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D01A0065C7CF03797175CBBE5EE381E2 /* Pods-XCSkeleton_Tests-dummy.m */; };
-		8C3EC33339186F5F0B46D5F9384A7135 /* XCSkeleton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC9318DED65AF0B74133E8A46DAB90 /* XCSkeleton-dummy.m */; };
+		78413BED0CFC9102FEE131522125F2D2 /* ZYSkeletonBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C53904BF28F019F13258A403FF65FF /* ZYSkeletonBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC707C90979073EC90845BDB1AC9622 /* FBShimmering-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 9C1317F9C2557C22E8C97AF5F8A4086C /* FBShimmering-Prefix.pch */; };
+		8E48E3DF220B4F379D0A11AB4B10B115 /* ZYSkeletonPostDetailHeadTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015AE0D87E2F0C201C4C453B688669EA /* ZYSkeletonPostDetailHeadTopCell.m */; };
 		92A988A8DE90E508E50031DC91CA7C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		95F93A73FD14D4C736D1C71B49D6815C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B2701EFB386C724DE3BE72DABBD84997 /* ZYSkeletonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B66AEF665BF796291B3CEF87888B144 /* ZYSkeletonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B69A8FC359BFC03470A039AD69D5CF5F /* Pods-XCSkeleton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0344447162D055312704BF2BBB64C6EC /* Pods-XCSkeleton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7A99D1E4A21082DA0EACFD262C929DA /* XCSkeletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 139C89EAF646F6E74760230DCF9FDC8B /* XCSkeletonTest.m */; };
-		B7AEE067B3BAAB5293A8026378E191F7 /* XCSkeletonTest.h in Headers */ = {isa = PBXBuildFile; fileRef = C8170D92835A7DCF88027328A8F9883A /* XCSkeletonTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7B91990AF5B04EB10F519968356E786 /* XCSkeleton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCF1C89DDAF3A78132CE11F8A621BA5 /* XCSkeleton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1209D9776286890D27BC641BF77C4E8 /* ZYSkeletonPostDetailHeadMiddleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09914697D4C534CD333339BA0E5035C9 /* ZYSkeletonPostDetailHeadMiddleCell.m */; };
+		C2C646CD25C06B78BF3FEB99EC4685A6 /* XCSkeleton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F8D936EC6931EEE1BBDEE04F6CAB65 /* XCSkeleton-dummy.m */; };
+		C2E0AA2710B4ED2CB1E38E5FE631DC5B /* ZYSkeletonTopicDetailHeadCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C50FE39D0A9DB1565B3A17DDD532C1 /* ZYSkeletonTopicDetailHeadCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC8BDB3D1AA6C96858C981A8B45A45A5 /* ZYSkeletonModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3F18C43EFC5589491C49149B42B66C /* ZYSkeletonModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE571554C56409F94D4336F54E29CA91 /* ZYSkeletonTopicDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E93F70E93C154A543952F142C34D94BD /* ZYSkeletonTopicDetailCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E794ACD7A252CEABD582FFA099F3A96B /* ZYSkeletonPostDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E85B9EEF99D37DDC4EF40075332700 /* ZYSkeletonPostDetailCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD2C049D1690C2E73A66E1622ED90592 /* ZYSkeletonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 367ACE7C42DFB2B75FD2A718E2F3C136 /* ZYSkeletonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,39 +60,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015AE0D87E2F0C201C4C453B688669EA /* ZYSkeletonPostDetailHeadTopCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonPostDetailHeadTopCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadTopCell.m; sourceTree = "<group>"; };
 		01893527777D6998DBDFFDB128AF543C /* Pods-XCSkeleton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCSkeleton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0344447162D055312704BF2BBB64C6EC /* Pods-XCSkeleton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCSkeleton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		09914697D4C534CD333339BA0E5035C9 /* ZYSkeletonPostDetailHeadMiddleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonPostDetailHeadMiddleCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadMiddleCell.m; sourceTree = "<group>"; };
 		0C70FDCA0397E47E4EED2397F979E68F /* Pods-XCSkeleton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCSkeleton_Tests-Info.plist"; sourceTree = "<group>"; };
 		0DDCEF6B486DF3984F303D89383A51BB /* Pods-XCSkeleton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCSkeleton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0FCF1C89DDAF3A78132CE11F8A621BA5 /* XCSkeleton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSkeleton-umbrella.h"; sourceTree = "<group>"; };
-		139C89EAF646F6E74760230DCF9FDC8B /* XCSkeletonTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCSkeletonTest.m; path = XCSkeleton/Classes/XCSkeletonTest.m; sourceTree = "<group>"; };
 		16D8F21EDFA071D2A91724444D544F6F /* Pods-XCSkeleton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCSkeleton_Example-Info.plist"; sourceTree = "<group>"; };
+		1912EB6DD77DA420ED3FFDD566610818 /* ZYSkeletonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonView.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonView.m; sourceTree = "<group>"; };
+		1F405F3A3715C1E5BB0202008FE9CAE8 /* ZYSkeletonPostDetailHeadBottomCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonPostDetailHeadBottomCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadBottomCell.h; sourceTree = "<group>"; };
+		20B7099808AC51F50A0DC959FC7590E2 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		24E93D5748D3609ECBA3433513D0C5E8 /* Pods-XCSkeleton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCSkeleton_Example-umbrella.h"; sourceTree = "<group>"; };
 		273F7DFEE8BEA3EE81ADD9D2BAEDA65F /* Pods_XCSkeleton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCSkeleton_Example.framework; path = "Pods-XCSkeleton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		298ECA983A4E1E7233AD5ADBF61F55D8 /* FBShimmeringView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		2B93A40D73F1402C2E0B13DB2AFCA42D /* ZYSkeletonPostDetailHeadTopCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonPostDetailHeadTopCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadTopCell.h; sourceTree = "<group>"; };
+		30EC4131641124A24A8B63534D258840 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3D6B0D26BC64D25863D212A524BB2CA3 /* XCSkeleton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSkeleton-prefix.pch"; sourceTree = "<group>"; };
+		32A5DE4AB0B50D9AF6578D8840E4C6F3 /* ZYSkeletonPostDetailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonPostDetailCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailCell.m; sourceTree = "<group>"; };
+		367ACE7C42DFB2B75FD2A718E2F3C136 /* ZYSkeletonModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonModel.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonModel.m; sourceTree = "<group>"; };
+		42478B6C03F5662AD21CD6ACE311F246 /* ZYSkeletonPostDetailHeadBottomCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonPostDetailHeadBottomCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadBottomCell.m; sourceTree = "<group>"; };
 		432977F8A26266D0255CAA5F9C3294A4 /* Pods-XCSkeleton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCSkeleton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		46A88C4C72966EC2B144780BD07E78B2 /* Pods_XCSkeleton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCSkeleton_Tests.framework; path = "Pods-XCSkeleton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		688D296AEEF56C4DE5947A52C850109E /* XCSkeleton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCSkeleton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4C7FB4DDC057CAB59D4E81C86F9B1E82 /* ZYSkeletonTopicDetailHeadCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonTopicDetailHeadCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonTopicDetailHeadCell.m; sourceTree = "<group>"; };
+		5D25DD15BD1575E7CABE4367F4A827D7 /* ZYSkeletonBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonBaseCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonBaseCell.m; sourceTree = "<group>"; };
+		61315C92316F73E1C58083CC628B6C47 /* FBShimmeringView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		69AC3A05233943E8742CE252176A542C /* XCSkeleton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCSkeleton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D3F18C43EFC5589491C49149B42B66C /* ZYSkeletonModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonModel.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonModel.h; sourceTree = "<group>"; };
 		6FCF0987A5D8CED43F41459DC39C5DA4 /* Pods-XCSkeleton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCSkeleton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		72EB63E7DFD10CB7F957C2A4CC9BBA89 /* XCSkeleton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XCSkeleton.modulemap; sourceTree = "<group>"; };
+		70C53904BF28F019F13258A403FF65FF /* ZYSkeletonBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonBaseCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonBaseCell.h; sourceTree = "<group>"; };
+		70EE012CBEC96CD4C636479CC5901D0D /* XCSkeleton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XCSkeleton.modulemap; sourceTree = "<group>"; };
 		7B654B2DF76B9CE53A907390563C21E6 /* XCSkeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCSkeleton.framework; path = XCSkeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CCB680E3E922A178B7DB6155DB7A815 /* XCSkeleton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCSkeleton.xcconfig; sourceTree = "<group>"; };
+		83C50FE39D0A9DB1565B3A17DDD532C1 /* ZYSkeletonTopicDetailHeadCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonTopicDetailHeadCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonTopicDetailHeadCell.h; sourceTree = "<group>"; };
+		8418265964E5070D13DB155883E3568A /* ZYSkeletonPostDetailHeadMiddleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonPostDetailHeadMiddleCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailHeadMiddleCell.h; sourceTree = "<group>"; };
+		8B66AEF665BF796291B3CEF87888B144 /* ZYSkeletonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonView.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonView.h; sourceTree = "<group>"; };
+		8C4A0EEAB46520008179631FBB38CA18 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		9C1317F9C2557C22E8C97AF5F8A4086C /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3CE765CA82670A4FACF2D3FA287D0FF /* Pods-XCSkeleton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCSkeleton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A59B4552E2DBF05E252DA235F0CB5D76 /* Pods-XCSkeleton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCSkeleton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AE4F5619F2D6E52FA41FA06A2F96958C /* XCSkeleton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCSkeleton.xcconfig; sourceTree = "<group>"; };
 		B0911313B3F91C1B72E12B3924BB713E /* Pods-XCSkeleton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCSkeleton_Example-dummy.m"; sourceTree = "<group>"; };
+		B3077EDDA4F016E5AED85185F5584C60 /* XCSkeleton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSkeleton-prefix.pch"; sourceTree = "<group>"; };
+		B5C7F2F8890C2D35DC5F0A474F310A9C /* FBShimmering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
 		B7001DB8023B591A24C54C06FAEBD3BD /* Pods-XCSkeleton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCSkeleton_Tests.modulemap"; sourceTree = "<group>"; };
+		C374D7B53AD65C55A6B36E2F6BB3EE7D /* ZYSkeletonTopicDetailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYSkeletonTopicDetailCell.m; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonTopicDetailCell.m; sourceTree = "<group>"; };
 		C381B2C5CEEAD7E0A579CE169B25DDB0 /* Pods-XCSkeleton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCSkeleton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8170D92835A7DCF88027328A8F9883A /* XCSkeletonTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCSkeletonTest.h; path = XCSkeleton/Classes/XCSkeletonTest.h; sourceTree = "<group>"; };
 		D01A0065C7CF03797175CBBE5EE381E2 /* Pods-XCSkeleton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCSkeleton_Tests-dummy.m"; sourceTree = "<group>"; };
-		DF4C21A804FDD6A65B78FAA205115A34 /* XCSkeleton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCSkeleton-Info.plist"; sourceTree = "<group>"; };
-		DFEC9318DED65AF0B74133E8A46DAB90 /* XCSkeleton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCSkeleton-dummy.m"; sourceTree = "<group>"; };
-		E339F2FCFF176E82F22D7B8C7AD33A06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E19ADA09173EF06E642C5796BF628B92 /* XCSkeleton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCSkeleton-umbrella.h"; sourceTree = "<group>"; };
+		E3F8D936EC6931EEE1BBDEE04F6CAB65 /* XCSkeleton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCSkeleton-dummy.m"; sourceTree = "<group>"; };
+		E4E85B9EEF99D37DDC4EF40075332700 /* ZYSkeletonPostDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonPostDetailCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonPostDetailCell.h; sourceTree = "<group>"; };
+		E93F70E93C154A543952F142C34D94BD /* ZYSkeletonTopicDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYSkeletonTopicDetailCell.h; path = XCSkeleton/Classes/SkeletonView/ZYSkeletonTopicDetailCell.h; sourceTree = "<group>"; };
 		EA06F4DE3096A445CB9484E3CA85B622 /* Pods-XCSkeleton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCSkeleton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED66C3E8479D97D5AAE514215CBAB1BB /* Pods-XCSkeleton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCSkeleton_Example.modulemap"; sourceTree = "<group>"; };
+		F0F7FD3BC2FE3CE7F9129DAA995DAA63 /* XCSkeleton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCSkeleton-Info.plist"; sourceTree = "<group>"; };
+		FB4B123BD5E8608F0468C6FB1FACBF10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FBF7717CC36A7AE8AF03227848ADF5D6 /* Pods-XCSkeleton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCSkeleton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDEF1F62F1D4E00EB222A430E52A05F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +145,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08C56F2BDCCAE7B02E3F824A06BD1974 /* Pod */ = {
+		12133988BD6F02A7DEC5049079FE5E14 /* XCSkeleton */ = {
 			isa = PBXGroup;
 			children = (
-				FDEF1F62F1D4E00EB222A430E52A05F3 /* LICENSE */,
-				E339F2FCFF176E82F22D7B8C7AD33A06 /* README.md */,
-				688D296AEEF56C4DE5947A52C850109E /* XCSkeleton.podspec */,
+				70C53904BF28F019F13258A403FF65FF /* ZYSkeletonBaseCell.h */,
+				5D25DD15BD1575E7CABE4367F4A827D7 /* ZYSkeletonBaseCell.m */,
+				6D3F18C43EFC5589491C49149B42B66C /* ZYSkeletonModel.h */,
+				367ACE7C42DFB2B75FD2A718E2F3C136 /* ZYSkeletonModel.m */,
+				E4E85B9EEF99D37DDC4EF40075332700 /* ZYSkeletonPostDetailCell.h */,
+				32A5DE4AB0B50D9AF6578D8840E4C6F3 /* ZYSkeletonPostDetailCell.m */,
+				1F405F3A3715C1E5BB0202008FE9CAE8 /* ZYSkeletonPostDetailHeadBottomCell.h */,
+				42478B6C03F5662AD21CD6ACE311F246 /* ZYSkeletonPostDetailHeadBottomCell.m */,
+				8418265964E5070D13DB155883E3568A /* ZYSkeletonPostDetailHeadMiddleCell.h */,
+				09914697D4C534CD333339BA0E5035C9 /* ZYSkeletonPostDetailHeadMiddleCell.m */,
+				2B93A40D73F1402C2E0B13DB2AFCA42D /* ZYSkeletonPostDetailHeadTopCell.h */,
+				015AE0D87E2F0C201C4C453B688669EA /* ZYSkeletonPostDetailHeadTopCell.m */,
+				E93F70E93C154A543952F142C34D94BD /* ZYSkeletonTopicDetailCell.h */,
+				C374D7B53AD65C55A6B36E2F6BB3EE7D /* ZYSkeletonTopicDetailCell.m */,
+				83C50FE39D0A9DB1565B3A17DDD532C1 /* ZYSkeletonTopicDetailHeadCell.h */,
+				4C7FB4DDC057CAB59D4E81C86F9B1E82 /* ZYSkeletonTopicDetailHeadCell.m */,
+				8B66AEF665BF796291B3CEF87888B144 /* ZYSkeletonView.h */,
+				1912EB6DD77DA420ED3FFDD566610818 /* ZYSkeletonView.m */,
+				9B3BC2656E84194C2FE5872C3361D5F1 /* FBShimmering */,
+				A66BEB2211500ECEF0563298775296A6 /* Pod */,
+				92C9D03D04366D47950BF7A2D4D96B7D /* Support Files */,
 			);
-			name = Pod;
+			name = XCSkeleton;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1829C4DCF3516D8C22E624562ADC2276 /* Pods-XCSkeleton_Example */ = {
@@ -126,20 +189,6 @@
 			);
 			name = "Pods-XCSkeleton_Example";
 			path = "Target Support Files/Pods-XCSkeleton_Example";
-			sourceTree = "<group>";
-		};
-		45C714D32F506087C3099B76CEBC7195 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				72EB63E7DFD10CB7F957C2A4CC9BBA89 /* XCSkeleton.modulemap */,
-				7CCB680E3E922A178B7DB6155DB7A815 /* XCSkeleton.xcconfig */,
-				DFEC9318DED65AF0B74133E8A46DAB90 /* XCSkeleton-dummy.m */,
-				DF4C21A804FDD6A65B78FAA205115A34 /* XCSkeleton-Info.plist */,
-				3D6B0D26BC64D25863D212A524BB2CA3 /* XCSkeleton-prefix.pch */,
-				0FCF1C89DDAF3A78132CE11F8A621BA5 /* XCSkeleton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XCSkeleton";
 			sourceTree = "<group>";
 		};
 		46AA7A73EFE2FC3B73FEDA65C3EDD525 /* Pods-XCSkeleton_Tests */ = {
@@ -168,16 +217,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		78E2B707EBFCA3F0016E7613605A5209 /* XCSkeleton */ = {
+		92C9D03D04366D47950BF7A2D4D96B7D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C8170D92835A7DCF88027328A8F9883A /* XCSkeletonTest.h */,
-				139C89EAF646F6E74760230DCF9FDC8B /* XCSkeletonTest.m */,
-				08C56F2BDCCAE7B02E3F824A06BD1974 /* Pod */,
-				45C714D32F506087C3099B76CEBC7195 /* Support Files */,
+				70EE012CBEC96CD4C636479CC5901D0D /* XCSkeleton.modulemap */,
+				AE4F5619F2D6E52FA41FA06A2F96958C /* XCSkeleton.xcconfig */,
+				E3F8D936EC6931EEE1BBDEE04F6CAB65 /* XCSkeleton-dummy.m */,
+				F0F7FD3BC2FE3CE7F9129DAA995DAA63 /* XCSkeleton-Info.plist */,
+				B3077EDDA4F016E5AED85185F5584C60 /* XCSkeleton-prefix.pch */,
+				E19ADA09173EF06E642C5796BF628B92 /* XCSkeleton-umbrella.h */,
 			);
-			name = XCSkeleton;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XCSkeleton";
+			sourceTree = "<group>";
+		};
+		9B3BC2656E84194C2FE5872C3361D5F1 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				B5C7F2F8890C2D35DC5F0A474F310A9C /* FBShimmering.h */,
+				9C1317F9C2557C22E8C97AF5F8A4086C /* FBShimmering-Prefix.pch */,
+				8C4A0EEAB46520008179631FBB38CA18 /* FBShimmeringLayer.h */,
+				20B7099808AC51F50A0DC959FC7590E2 /* FBShimmeringLayer.m */,
+				61315C92316F73E1C58083CC628B6C47 /* FBShimmeringView.h */,
+				298ECA983A4E1E7233AD5ADBF61F55D8 /* FBShimmeringView.m */,
+			);
+			name = FBShimmering;
+			path = XCSkeleton/Classes/SkeletonView/FBShimmering;
+			sourceTree = "<group>";
+		};
+		A66BEB2211500ECEF0563298775296A6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				30EC4131641124A24A8B63534D258840 /* LICENSE */,
+				FB4B123BD5E8608F0468C6FB1FACBF10 /* README.md */,
+				69AC3A05233943E8742CE252176A542C /* XCSkeleton.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BD977BA7A6BBC3707473AE3325F21F55 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12133988BD6F02A7DEC5049079FE5E14 /* XCSkeleton */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -186,14 +269,6 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		C1EAB77B23524C31DE45ACB2D450C5CE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				78E2B707EBFCA3F0016E7613605A5209 /* XCSkeleton */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C9E5E938D5BF80CB9D5C0A21B64875D3 /* Targets Support Files */ = {
@@ -209,7 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C1EAB77B23524C31DE45ACB2D450C5CE /* Development Pods */,
+				BD977BA7A6BBC3707473AE3325F21F55 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				6EB78F26154E9D648BCFA115C350D1BA /* Products */,
 				C9E5E938D5BF80CB9D5C0A21B64875D3 /* Targets Support Files */,
@@ -235,12 +310,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B931F19B98D7D2F60336A834D335BABF /* Headers */ = {
+		A2E7A2F0ACFE8CC48719EF10B5264273 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B91990AF5B04EB10F519968356E786 /* XCSkeleton-umbrella.h in Headers */,
-				B7AEE067B3BAAB5293A8026378E191F7 /* XCSkeletonTest.h in Headers */,
+				08E63435930FE74F1BB473E5685B6407 /* FBShimmering.h in Headers */,
+				49B4CE73DB4CC91D52987F70A9452299 /* FBShimmeringLayer.h in Headers */,
+				5FF01A706CA302B2EB623CFCBF667447 /* FBShimmeringView.h in Headers */,
+				2D11278BED020CB78CFA14CBB7CB769A /* XCSkeleton-umbrella.h in Headers */,
+				78413BED0CFC9102FEE131522125F2D2 /* ZYSkeletonBaseCell.h in Headers */,
+				DC8BDB3D1AA6C96858C981A8B45A45A5 /* ZYSkeletonModel.h in Headers */,
+				E794ACD7A252CEABD582FFA099F3A96B /* ZYSkeletonPostDetailCell.h in Headers */,
+				6B383AB805B9B12FA3995C898DE48DE9 /* ZYSkeletonPostDetailHeadBottomCell.h in Headers */,
+				039F80630700928C88BDC4BBD47E2582 /* ZYSkeletonPostDetailHeadMiddleCell.h in Headers */,
+				342FE693514D931C86E593C2B8ABF39B /* ZYSkeletonPostDetailHeadTopCell.h in Headers */,
+				DE571554C56409F94D4336F54E29CA91 /* ZYSkeletonTopicDetailCell.h in Headers */,
+				C2E0AA2710B4ED2CB1E38E5FE631DC5B /* ZYSkeletonTopicDetailHeadCell.h in Headers */,
+				B2701EFB386C724DE3BE72DABBD84997 /* ZYSkeletonView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +364,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D6474B1A13F108CC9F505FCD363A7E6 /* Build configuration list for PBXNativeTarget "XCSkeleton" */;
 			buildPhases = (
-				B931F19B98D7D2F60336A834D335BABF /* Headers */,
-				E9FD4788C0C5955F1D6D875861EEADBA /* Sources */,
+				A2E7A2F0ACFE8CC48719EF10B5264273 /* Headers */,
+				F0EA61AB3EF0A9AE269D2291569E4EC1 /* Sources */,
 				A8052F2A89D71BBFBE1A9AED35D7E7E2 /* Frameworks */,
 				CB1076952854DFE63D1A241A12F29E0D /* Resources */,
 			);
@@ -372,12 +458,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9FD4788C0C5955F1D6D875861EEADBA /* Sources */ = {
+		F0EA61AB3EF0A9AE269D2291569E4EC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3EC33339186F5F0B46D5F9384A7135 /* XCSkeleton-dummy.m in Sources */,
-				B7A99D1E4A21082DA0EACFD262C929DA /* XCSkeletonTest.m in Sources */,
+				8BC707C90979073EC90845BDB1AC9622 /* FBShimmering-Prefix.pch in Sources */,
+				3D3F982644CBA6C7AB69DD2844195639 /* FBShimmeringLayer.m in Sources */,
+				316ABB5D689E558DA8003EAC9A967501 /* FBShimmeringView.m in Sources */,
+				C2C646CD25C06B78BF3FEB99EC4685A6 /* XCSkeleton-dummy.m in Sources */,
+				506E239CD2B637A90FFD19457A9AF26F /* ZYSkeletonBaseCell.m in Sources */,
+				FD2C049D1690C2E73A66E1622ED90592 /* ZYSkeletonModel.m in Sources */,
+				56E624CCCF94BF4D30CC5C12C7D26971 /* ZYSkeletonPostDetailCell.m in Sources */,
+				557563611982DEC956D28B9857EFF6A3 /* ZYSkeletonPostDetailHeadBottomCell.m in Sources */,
+				C1209D9776286890D27BC641BF77C4E8 /* ZYSkeletonPostDetailHeadMiddleCell.m in Sources */,
+				8E48E3DF220B4F379D0A11AB4B10B115 /* ZYSkeletonPostDetailHeadTopCell.m in Sources */,
+				5888A5367DB64E4EE01BB73DDF6E5C81 /* ZYSkeletonTopicDetailCell.m in Sources */,
+				2006253BA82C31F261E92D43ACA25F42 /* ZYSkeletonTopicDetailHeadCell.m in Sources */,
+				2A667BBFBBF504D47C0B19C1A7234B19 /* ZYSkeletonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +539,7 @@
 		};
 		16952B1AA957C6EF92B78FB600FB3851 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CCB680E3E922A178B7DB6155DB7A815 /* XCSkeleton.xcconfig */;
+			baseConfigurationReference = AE4F5619F2D6E52FA41FA06A2F96958C /* XCSkeleton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,7 +697,7 @@
 		};
 		7D4229485A22B95CAF4A1B19715FE899 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CCB680E3E922A178B7DB6155DB7A815 /* XCSkeleton.xcconfig */;
+			baseConfigurationReference = AE4F5619F2D6E52FA41FA06A2F96958C /* XCSkeleton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
